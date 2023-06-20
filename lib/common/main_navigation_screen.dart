@@ -1,4 +1,7 @@
 import 'package:armchair_world_travel/common/widgets/nav_tab.dart';
+
+import 'package:armchair_world_travel/travel/view/travelScreen.dart';
+import 'package:armchair_world_travel/wish/view/wishMainScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
@@ -44,11 +47,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           Offstage(
             //Offstage는 네비게이터의 여러 탭을 한번에 구동시킨다. 이와 같이 처리해야 다른 탭에 갔다가 와도 캐시가 유지된다.
             offstage: _selectedIndex != 0,
-            child: const Center(),
+            child: const WishMainScreen(),
           ),
           Offstage(
             offstage: _selectedIndex != 1,
-            child: const Center(),
+            child: const TravelScreen(),
           ),
           Offstage(
             offstage: _selectedIndex != 2,
@@ -68,29 +71,29 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               NavTab(
                 text: "Home",
                 isSelected: _selectedIndex == 0,
-                icon: FontAwesomeIcons.house,
-                selectedIcon: FontAwesomeIcons.house,
+                icon: FontAwesomeIcons.solidHeart,
+                selectedIcon: FontAwesomeIcons.solidHeart,
                 selectedIndex: _selectedIndex,
                 onTap: () => _onTap(
                     0), //widget을 만들어서 onTap을 required로 지정해뒀다. _onTap(0)을 실행시킴.
               ),
               NavTab(
                 text: "travel",
-                isSelected: _selectedIndex == 0,
+                isSelected: _selectedIndex == 1,
                 icon: FontAwesomeIcons.earthAmericas,
                 selectedIcon: FontAwesomeIcons.earthAmericas,
                 selectedIndex: _selectedIndex,
                 onTap: () => _onTap(
-                    0), //widget을 만들어서 onTap을 required로 지정해뒀다. _onTap(0)을 실행시킴.
+                    1),
               ),
               NavTab(
                 text: "settings",
-                isSelected: _selectedIndex == 0,
+                isSelected: _selectedIndex == 2,
                 icon: FontAwesomeIcons.gear,
                 selectedIcon: FontAwesomeIcons.gear,
                 selectedIndex: _selectedIndex,
                 onTap: () => _onTap(
-                    0), //widget을 만들어서 onTap을 required로 지정해뒀다. _onTap(0)을 실행시킴.
+                    2),
               ),
             ],
           ),

@@ -40,8 +40,8 @@ class NavTab extends StatelessWidget {
                 FaIcon(
                   isSelected ? selectedIcon : icon,
                   color: isSelected
-                      ? Theme.of(context).colorScheme.secondary
-                      : Theme.of(context).primaryColor,
+                      ? Theme.of(context).colorScheme.primary
+                      : Theme.of(context).colorScheme.secondary,
                 ),
                 Gaps.v5,
               ],
