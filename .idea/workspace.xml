@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be80c148-c73e-44fa-835b-f60335c4d62d" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/travel/view/travelScreen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/wish/view/wishMainScreen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/authentication/views/intro_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/authentication/views/splash_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/TravelButton.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/armchairWorldTravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/armchairWorldTravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/common/main_navigation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/main_navigation_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/widgets/nav_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/widgets/nav_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/travel/view/travelScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/travel/views/travelScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/wish/view/wishMainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/wish/views/wishMainScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +55,20 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/dante/Desktop/Study/Flutter/armchair_world_travel/lib",
+    "last_opened_file_path": "/Users/dante/Desktop/Study/Flutter/armchair_world_travel/lib/common/widgets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/common/widgets" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/common" />
     </key>
@@ -85,7 +91,13 @@
       <workItem from="1686957265708" duration="2580000" />
       <workItem from="1687004475911" duration="12000" />
       <workItem from="1687172391721" duration="396000" />
-      <workItem from="1687264553286" duration="1848000" />
+      <workItem from="1687264553286" duration="1881000" />
+      <workItem from="1687266454574" duration="325000" />
+      <workItem from="1687266790903" duration="142000" />
+      <workItem from="1687347714772" duration="37000" />
+      <workItem from="1687428795669" duration="602000" />
+      <workItem from="1687429410186" duration="2420000" />
+      <workItem from="1687431848950" duration="3584000" />
     </task>
     <servers />
   </component>
