@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../constants/sizes.dart';
+import '../constants/sizes.dart';
 
 class WishMainScreen extends StatefulWidget {
   const WishMainScreen({super.key});
@@ -13,7 +13,7 @@ class WishMainScreen extends StatefulWidget {
 class _WishMainScreenState extends State<WishMainScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Text(
           "위시리스트 메인",

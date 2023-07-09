@@ -1,8 +1,9 @@
+/* 2023.07.09 jegal, goRouter 이후 마이그레이션 진행예정  본 프로젝트 개발 시작점은 네비게이터 1.0 사용 
 import 'package:armchair_world_travel/authentication/views/intro_screen.dart';
 import 'package:armchair_world_travel/authentication/views/splash_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod/riverpod.dart';
-import 'common/main_navigation_screen.dart';
+import 'app/main_navigation_screen.dart';
 
 final routerProvider = Provider(
   (ref) {
@@ -33,3 +34,5 @@ final routerProvider = Provider(
     );
   },
 );
+
+*/

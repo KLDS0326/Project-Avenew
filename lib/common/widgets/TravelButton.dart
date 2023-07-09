@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../../../../constants/sizes.dart';
 
 class TravelButton extends StatefulWidget {
-  final Function onTapFunction;
   final bool isSelected;
 
   const TravelButton({
     super.key,
-    required this.onTapFunction,
     required this.isSelected,
   });
 
@@ -29,15 +24,25 @@ class _TravelButtonState extends State<TravelButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => widget.onTapFunction(context),
       onTapDown: onLongPressFunction,
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-          /*FIXME bottomNavi를 키우지 않고 이 버튼만 키우는 방법은..?*/
           ClipRect(
             clipBehavior: Clip.none,
             child: Container(
+              width: 80,
+              height: 80,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/globe.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+
+            /*Container(
               width: 100,
               height: 100,
               decoration: const BoxDecoration(
@@ -52,6 +57,7 @@ class _TravelButtonState extends State<TravelButton> {
                 ),
               ),
             ),
+            */
           ),
         ],
       ),
