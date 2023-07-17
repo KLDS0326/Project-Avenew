@@ -60,11 +60,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
-        color: _selectedIndex == 0 ? Colors.black : Colors.white,
+      bottomNavigationBar: Container(
+        color: const Color.fromARGB(255, 29, 161, 170),
         child: Padding(
-          padding: const EdgeInsets.all(
-            Sizes.size12,
+          padding: const EdgeInsets.only(
+            //top: Sizes.size0,
+            bottom: Sizes.size32,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -73,6 +74,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 text: "WishList",
                 isSelected: _selectedIndex == 0,
                 icon: FontAwesomeIcons.solidHeart,
+
                 selectedIcon: FontAwesomeIcons.solidHeart,
                 selectedIndex: _selectedIndex,
                 onTap: () => _onTap(
