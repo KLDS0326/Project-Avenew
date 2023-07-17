@@ -18,9 +18,9 @@ class ArmchairWorldTravel extends StatelessWidget {
       title: 'ArmchairWorldTravel',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
-        bottomAppBarTheme: BottomAppBarTheme(
+        /*  bottomAppBarTheme: BottomAppBarTheme(
           color: Colors.grey.shade900,
-        ),
+        ), */
         primaryColor: const Color(0xFFE9435A),
         textSelectionTheme: const TextSelectionThemeData(
           cursorColor: Color(0xFFE9435A),

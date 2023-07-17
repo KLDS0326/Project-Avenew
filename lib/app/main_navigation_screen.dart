@@ -83,6 +83,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 onTap: _onTravelButtonTap,
                 child: TravelButton(
                   isSelected: _selectedIndex == 1,
+                  onTap: () => _onTap(1),
                 ),
               ),
               Gaps.h24,

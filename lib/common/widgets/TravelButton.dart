@@ -1,30 +1,19 @@
 import 'package:flutter/material.dart';
 
-class TravelButton extends StatefulWidget {
-  final bool isSelected;
-
+class TravelButton extends StatelessWidget {
   const TravelButton({
     super.key,
     required this.isSelected,
+    required this.onTap,
   });
 
-  @override
-  State<TravelButton> createState() => _TravelButtonState();
-}
-
-class _TravelButtonState extends State<TravelButton> {
-  bool _isClicked = false;
-
-  void onLongPressFunction(TapDownDetails context) {
-    setState(() {
-      _isClicked = !_isClicked;
-    });
-  }
+  final bool isSelected;
+  final Function onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTapDown: onLongPressFunction,
+      onTap: () => onTap(),
       child: Stack(
         clipBehavior: Clip.none,
         children: [
